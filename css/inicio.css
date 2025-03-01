@@ -36,5 +36,85 @@ h1{
     
     border-width: 3px;
     border-color: rgb(208, 23, 44);
-    border-style: dashed;
+    border-style: dashed;  /* Estilo borde de linea*/
+    border: 5px solid rgb(0, 38, 255) ; /* Este aplica lo mismo para las tres lineas anteriores */
+    border-radius: 16px ;
+    border-left-color: blue ;
+    border-bottom-style: dashed;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 50%;
+    border-right-color: #000000;
 }
+
+.bg{
+    border: 1px solid #000000;
+    margin:16px; /*externo de un cuadro*/
+    margin: 16px 25px;
+    margin: 16px 20px 24px 28px;/*En sentido de las mnecillas se van ajustando los parametros*/
+    margin-block: 50px;
+    margin-top: 60px; 
+    margin-bottom: 40px;
+    margin-block-start: 60px;
+    margin-block-end: 40px;
+    margin-inline: 20px; /* margenes laterales*/
+    margin-left: 15px;
+    margin-right: 25px;
+    margin-inline-start: 15px;
+    margin-inline-end: 25px;
+
+    padding: 32px;
+
+    width: 60vw;  /*Definir unidades vw porcentaje de la pantalla */
+    height: 60vh;
+    background-color: #ff25ff;/*Color de fondo*/
+    background-image: url("../descarga.jpg");
+    background-size: 100%; /*Se puede trabajar en pixeles o porcentaje*/
+    background-repeat: no-repeat;/* no repetir la imagenen en cuadro*/
+    background-position :10px 25px;
+    box-shadow: 1px -5px 10px 6px #000000; /*moviemito x , y , difuminacion sombra , grosor sombra , color*/
+
+
+}
+/*Transiciones y animaciones*/
+.boton{
+    width: 150px;
+    height: 80px;
+    background-color: #00f;
+    color: #fff;
+    transition-property:  background-color, color,width  ;/*trnsicion : propiedad*/
+    transition-duration: 2s, 3s, 500ms; /*transition : parametros de timpo*/
+    -o-transition-timing-function: linear;
+    transition-delay: 1s,0s,0s;
+}
+
+.boton:hover{
+    width: 250px;
+    background-color: #fff;
+    color: #000000;
+}
+
+.c1{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #00f;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    animation-name: animacion1;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 5;
+    animation-direction: alternate;
+}
+@keyframes animacion1{
+    from{
+        left: 0px;
+        background-color: #00f;
+    }
+    to{
+        left: 100vw;
+        background-color: #ff0000;
+    }
+}
+
