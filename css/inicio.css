@@ -108,13 +108,32 @@ h1{
     animation-direction: alternate;
 }
 @keyframes animacion1{
-    from{
+   /* from{
         left: 0px;
         background-color: #00f;
     }
     to{
         left: 100vw;
         background-color: #ff0000;
+    }*/
+
+    0%{
+        height: 0px;
+        left: 0px;
+        background-color: #00f;
+    }
+    50%{
+        height: 80px;
+        border-radius: 0px;
+        box-shadow: 1px 1px 5px 10px #000000;
+    }
+    75%{
+        height: 300 px ;
+        top: 300px;
+    }
+    100%{
+        left: 100vw;
+        background-color: #f00;
     }
 }
 
